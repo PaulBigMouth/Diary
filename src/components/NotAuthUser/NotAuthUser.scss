@@ -1,0 +1,29 @@
+@import "../../vars.scss";
+
+.notAuthUser{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notAuthUserBox{
+    width: 600px;
+    padding: 20px 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+.notAuthUserBox div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.warningIcon{
+    color: red;
+}
+.notAuthUserBox p a{
+    text-decoration: underline;
+    color: $blue;
+}

@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { AddRecordOverlayState } from "./context/addRecordOverlay/AddRecordOverlayState"
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { Auth } from './pages/Auth/Auth';
+import { Base } from "./pages/Base/Base"
+import { Register } from './pages/Register/Register';
+import { FirebaseState } from './context/firebase/firebaseState';
+import { SettingsOverlayState } from "./context/settingsOverlay/SettingsOverlayState"
+import { ViewRecordOverlayState } from './context/viewRecordOverlay/ViewRecordOverlayState';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <FirebaseState>
+      <AddRecordOverlayState>
+        <SettingsOverlayState>
+          <ViewRecordOverlayState>
+            <BrowserRouter>
+              <Switch>
+                <Route path="/" exact component={Auth} />
+                <Route path="/register" component={Register} />
+                <Route path="/base" component={Base} />
+              </Switch>
+            </BrowserRouter>
+          </ViewRecordOverlayState>
+        </SettingsOverlayState>
+      </AddRecordOverlayState>
+    </FirebaseState>
   );
 }
 

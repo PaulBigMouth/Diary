@@ -1,0 +1,68 @@
+@import "../../../vars.scss";
+
+.recordsList{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.recordItem{
+    background: url('../../../assets/img/helpimg.jpg') no-repeat;
+    background-size: cover;
+    color: #e2dede;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    
+    
+}
+
+.recordItemInner{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .4s ease-in-out;
+    padding: 15px 15px;
+    height: 250px;
+    position: relative;
+}
+.recordItemInner h3{
+    font-weight: 500;
+}
+.recordItemInner p{
+    font-weight: 300;
+}
+.recordItem:hover .recordItemInner{
+    background: rgba(0,0,0,0.5);
+    transform: translateY(0);
+    opacity: 1;
+}
+.recordItem:hover .recordSettingsBtn svg{
+    opacity: 1;
+}
+.recordSettingsBtn svg{
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.recordSettingsBtn{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 15px;
+    align-items: flex-end;
+    color: #fff;
+   
+}
+
+.searchRecord{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+.searchRecordInput{
+    width: 200px;
+    height: 25px;
+    padding-left: 10px;
+}

@@ -1,0 +1,56 @@
+@import "../../vars.scss";
+
+#viewOverlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.viewOverlayTransition-enter  {
+    opacity: 0;
+}
+.viewOverlayTransition-enter-active {
+    opacity: 1;
+    transition: opacity 400ms;
+}
+.viewOverlayTransition-exit {
+    opacity: 1;
+}
+.viewOverlayTransition-exit-active {
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+
+.viewOverlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.2);
+}
+.viewOverlayWindow{
+    background-color: #fff;
+    border-radius: 7px;
+    position: relative;
+    width: 800px;
+    // padding: 15px 20px;
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+
+}
+
+
+
+.viewOverlayRecords ul li{
+    margin: 10px 0;
+    background-color:rgb(199, 218, 240);
+    cursor: pointer;
+}
+
+

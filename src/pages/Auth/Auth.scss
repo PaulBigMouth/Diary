@@ -1,0 +1,66 @@
+@import "../../vars.scss";
+
+.Auth{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.AuthBox{
+    width: 500px;
+    border-radius: 7px;
+    background-color: #fff;
+   
+}
+
+.AuthBoxInner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.AuthInputs{
+    width: 100%;
+}
+.footerAuth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.authimg{
+ 
+    background-size: cover;
+    
+}
+.AuthBtn{
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    background-color: $blue;
+    padding: 7px 25px;
+}
+.AuthLink{
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: $blue;
+    text-decoration: underline;
+}
+.errorAuth{
+    margin-bottom: 10px;
+    color: red;
+    opacity: 0;
+    font-weight: 500;
+    transition: opacity .2s ease-in-out;
+}
+
+.errorAuth.open{
+    opacity: 1;
+}

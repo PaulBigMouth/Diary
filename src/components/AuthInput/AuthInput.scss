@@ -1,0 +1,48 @@
+@import "../../vars.scss";
+
+#AuthInput{
+    position: relative;
+    width: 50%;
+    margin: 10px auto 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+.authIcon{
+    padding: 5px;
+    border: 2px solid #202020;
+    transition: all .2s linear;
+}
+
+.authIcon svg{
+    transition: all .2s linear;
+}
+
+.AuthInput{
+    position: relative;
+    z-index: 2;
+    background: none;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 8px 5px;
+    border: 2px solid #202020;
+    border-left: none;
+    transition: all .2s linear;
+}
+.AuthInput:valid, .AuthInput:valid ~ .authIcon{
+    border-color: $green;
+}
+.AuthInput:valid ~ .authIcon svg{
+    color: $green;
+}
+.AuthEmailInput:invalid, .AuthEmailInput:invalid ~ .authIcon{
+    border-color: $red;
+}
+.AuthEmailInput:invalid ~ .authIcon svg{
+    color: $red;
+}
+
+

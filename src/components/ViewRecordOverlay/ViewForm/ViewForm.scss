@@ -1,0 +1,63 @@
+.addViewRecordForm{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -5px 15px -11px rgba(0,0,0,0.75);
+    padding: 10px;
+    background-color: #fff;
+    
+}
+.viewFormTransition-enter  {
+    bottom: -200px;
+}
+.viewFormTransition-enter-active {
+    bottom: 0;
+    transition: all 300ms;
+}
+// .viewFormTransition-enter-done { 
+//     bottom: 0;
+// }
+.viewFormTransition-exit {
+    bottom: 0;
+}
+.viewFormTransition-exit-active {
+    bottom: -200px;
+    transition: all 300ms;
+}
+.addViewRecordForm form{
+    width: 100%;
+    height: 100%;
+}
+.addViewRecordForm form div{
+    display: flex;
+    
+    flex-direction: column;
+    margin: 6px 0;
+}
+.viewRecordBtnForm {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.viewFormAccept{
+    padding: 5px 9px;
+    background-color: green;
+    color: #fff;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.viewFormCancel{
+    padding: 5px 9px;
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+.formTimes{
+    float: right;
+    font-size: 18px;
+    margin-right: 20px;
+    
+}

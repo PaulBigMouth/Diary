@@ -1,0 +1,42 @@
+@import "../../vars.scss";
+
+.settingsOverlayWindow{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    color: #000;
+    position: relative;
+}
+.settingsOverlayWindow{
+    height: 350px;
+}
+.settingsOverlayRightItem{
+    height: 100%;
+    width: 100%;
+    
+}
+.formItem, .settingsTitle, .settingsDescription{
+    display: flex;
+    flex-direction: column;
+}
+.formItem div{
+    margin-bottom: 20px;
+}
+
+.settingsFormBtn{
+    display: flex;
+    justify-content: flex-end;
+}
+.settingsFormBtn span{
+    margin: 0 7px;
+    padding: 10px;
+    color: #fff;
+}
+.settingsFormBtn .delete{
+    background-color: red;
+}
+.settingsFormBtn .save{
+    background-color: $blue;
+}
+.settingsDescription textarea{
+    height: 150px;
+}

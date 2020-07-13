@@ -1,0 +1,57 @@
+@import "../../../vars.scss";
+.viewRecord{
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.addViewRecordBtn button{
+    border-radius: 50%;
+    background-color: $blue;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.viewRecordTitle{
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+}
+.viewRecordBtns svg{
+    margin: 0 5px;
+}
+.viewRecordTitleInput, .viewRecordDescriptionInput{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    letter-spacing: normal;
+}
+.viewRecordTitleInput{
+    font-weight: 600;
+}
+.putViewRecordBtn{
+    float: right;
+    background-color: rgb(184, 218, 93);
+    padding: 5px 8px;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+.viewRecordPut.on{
+    color: green;
+    transition: color .2s linear;
+}
+.viewRecordPut.hide{
+    color: #000;
+    transition: color .2s linear;
+}
+
+.putViewRecordBtn.on{
+    opacity: 1;
+}
+.putViewRecordBtn.hide{
+    opacity: 0;
+}
+
